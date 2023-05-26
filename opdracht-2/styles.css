@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+/*color: #DE6127; oranje*/
+/*color: #e8e8e8; lichtgrijs*/
+/*color: #737373; donkergrijs*/
+/*color: #faa0c7; */
+/*color: #272729; */
+/*color: #928471; */
+/*color: #c2c2b4; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .product {
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
@@ -6,3 +27,71 @@
 }
 
 /* - Vul dit document aan met jouw eigen css! - */
+.image-elements {
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.img-label {
+    background-color: #e8e8e8;
+    padding: 4px 20px;
+    color: #DE6127;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px ridge #e8e8e8;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -56px;
+    top: 50px;
+    z-index: -1;
+}
+
+.like-icon {
+    position: absolute;
+    right: 14px;
+    bottom: 16px;
+    height: 14px;
+}
+
+.grey-text {
+    font-weight: 500;
+    font-size: 12px;
+    color: #737373;
+}
+
+.black-text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #272729;
+}
+
+.product-color-dot  {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.product-color-dot  + .product-color-dot {
+    margin-left: 4px;
+}
+
+.color-pink {
+    background-color: #faa0c7;
+}
+
+.color-black {
+    background-color: #272729;
+}
+
+.color-brown {
+    background-color: #928471;
+}
+
+.color-grey {
+    background-color: #c2c2b4;
+}
