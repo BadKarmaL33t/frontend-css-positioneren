@@ -1,8 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+/*color: #F7F7F7; lichtgrijs*/
+/*color: #d3d3d3; donkergrijs*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .recipe-card {
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    position: relative;
 }
 
 /* - Vul dit document aan met jouw eigen css! - */
+.like-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    color: white;
+}
+
+.pasta-salad-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.info-block {
+    background-color: #F7F7F7;
+    font-size: 14px;
+    width: 100%;
+}
+
+.info-block {
+    padding-block: 5px;
+    margin-top: -6px;
+}
+
+.detail-item {
+    margin-inline: 8px;
+    font-size: 14px;
+}
+
+.detail-icon {
+    height: 12px;
+    margin-inline: 5px;
+}
+
+.recipe-title {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px;
+}
